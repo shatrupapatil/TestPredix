@@ -1,0 +1,107 @@
+<ion-view title="Task" id="page1">
+    <!--    <ion-nav-buttons side="left">-->
+    <!--<!--        <img class="ge-header-icon"/>-->-->
+    <!--    </ion-nav-buttons>-->
+    
+    <!--    <div class="dPODHeader bar bar-header">-->
+    <!--        <img class="ge-header-icon"/>-->
+    <!--<!--        <h1 class="title dPODheader" >Task</h1>-->-->
+    <!--    </div>-->
+    
+    
+    <ion-content padding="true" class="" style="overflow-x:">
+        
+        <ion-refresher
+            pulling-text="Pull to refresh..."
+            on-refresh="doRefresh()">
+        </ion-refresher>
+        
+        <!--<ion-content padding="true">-->
+        
+        <!--        <label class="item item-input searchTasks">-->
+        <!--            <i class="icon ion-search placeholder-icon"></i>-->
+        <!--            <input class="searchbar" type="text" placeholder="Search Turbine" ng-model="searchForce">-->
+        <!--        </label>-->
+        
+        <label class="item item-input searchTasks">
+            <i class="icon ion-search placeholder-ion"></i>
+            <input type="search" placeholder="Search Turbine" ng-model="searchQuery">
+        </label>
+        
+        
+        
+        
+        <nvd3 options="vm.options" data="vm.data"></nvd3>
+        
+        
+        <ion-list>
+            <ion-item ng-click="DetailsPage(GetTurbai.task_turbine_id)" class="item TaskMenu"  ng-repeat="GetTurbai in GetTurbaiDatas | filter:searchQuery">
+                <div class="taskInfo" style="width: 80%;display: inline-block;">
+                    
+                    <!--                         <img src="img/taskInProgress.png">-->
+                    
+                    <!--{{GetTurbai}}-->
+                    <div style="display: inline-block;">
+                        <img style="height: 65px;margin-top: 2px" ng-if="GetTurbai.task_status == 'completed'" ng-src="img/taskCompleted.png">
+                            <img style="height: 65px;margin-top: 2px" ng-if="GetTurbai.task_status == 'NotStart'" ng-src="img/taskNotStart.png">
+                                <img style="height: 65px;margin-top: 2px" ng-if="GetTurbai.task_status == 'Start'" ng-src="img/taskInProgress.png">
+                     </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <div style="margin-top: 6%;display: inline-block;">
+                        
+                        <img class="turbineStatus" ng-src="{{GetTurbai.task_turbine_status == 'Off' && 'img/Turbine_red_3X.png' || 'img/Turbine_green_3X.png'}}"/>
+                        
+                        
+                        
+                        <!--                        <p style="position: absolute;color: white;font-size: 10px;font-weight: bold;margin-top: -35px;-->
+                        <!--                        margin-left: 9px;">{{GetTurbai.task_turbine_id}}</p>-->
+                        
+<!--                        <p style="position: absolute;color: white;font-size: 12px;font-weight: bold;margin-top: -37px;-->
+<!--                                                margin-left: 3.5%;text-align: center;">{{GetTurbai.task_turbine_id}}</p>-->
+<div style="position: absolute;color: white;font-size: 12px;font-weight: bold;margin-top: -37px;
+    margin-left: 6px;text-align: center;width: 33px">{{GetTurbai.task_turbine_id}}</div>
+
+                    </div>
+                    
+                    
+                    <div class="infoContent">
+                        <!--<h4 style="color: cornflowerblue;">{{GetTurbai.task_turbine_id}}</h4>-->
+                        <h5 style="color:#4C4C4C; font-weight: bold;margin-top: 17px">{{GetTurbai.task_type}}</h5>
+                            <p style="color: #666;padding-top: 4px;font-size: x-small;">{{GetTurbai.task_added_on_date}}</p>
+                    </div>
+                </div>
+                <div style="width: 15%;display: inline-block;float: right;">
+                    <div><img src="img/details.png" style="height: 15px;position: relative;left:2px;top:10px;"></div>
+                    
+                    <div style="top: 15px;position: relative;left:-20px; display:inline-block;">
+                        
+                        
+                        <img  ng-src="{{GetTurbai.sync_status == 'yes' && 'img/syncSuccess.png' || 'img/syncFail.png'}}"  style="height: 18px;margin-top: 10px;">
+                            
+                            
+                            
+                            
+                            
+                            
+                            <div style="border: 1px solid rgb(88, 174, 237);border-radius: 4px;margin:2px;height:15px;right:10px;display: inline-block;">
+                                <img src="img/estimatedTime.png" style="height: 10px;position: relative;left:2px;top:-5px;">
+                                    <span style="font-size: 8px;color:rgb(88, 174, 237);position: relative;left: -2px;top:-7px">&nbsp;&nbsp;{{GetTurbai.task_est_duration_hrs}}</span>
+                                    </div>
+                            </div>
+                    
+                    
+                    
+                    
+                </div>
+            </ion-item>
+            
+            
+        </ion-list>
+        
+    </ion-content>
+</ion-view>

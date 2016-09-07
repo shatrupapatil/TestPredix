@@ -1,0 +1,432 @@
+$primary: #2196F3;
+/*Revision*/
+.list .item {
+/*    background-color: #161616;*/
+/*    color: #595959;*/
+}
+ion-item {
+/*    background-color: #161616 !important;*/
+}
+.item .icon-badge{
+    position: absolute;
+    top: 29%;
+    right: 100px;
+    font-size: 25px;
+}
+.item-complex .item-content, .item-radio .item-content{
+        background-color: #000;
+}
+.col.col-50{
+/*    border: 2px solid #4CAF50;*/
+    height: 100px;
+    text-align: center;
+}
+.image-list-thumb{
+    height: 60px;
+    
+}
+.button.round{
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+}
+.textadjust{
+    padding-top: 5px;
+}
+.clockadjust{
+    margin-top: 8px;
+    border: 2px solid #000;
+    box-shadow: 1px 1px 1px 1px #888888;
+}
+/*Login*/
+label.username.item.item-input{
+    border-radius: 8px;
+    width: 250px;
+    margin: 0% 10% 0% 15%;
+    margin-bottom: 10px;
+}
+label.password.item.item-input{
+    margin-top: 5%;
+    border-radius: 8px;
+    width: 250px;
+    margin: 0% 10% 0% 15%;
+}
+label.remeberMe{
+    color: white;
+}
+li.item.item-checkbox{
+    border: none;
+    margin-left: 30px;
+    margin-top: -20px;
+}
+
+.checkbox input:before, .checkbox-icon:before{
+    border-radius: 0px;
+}
+
+button.loginSubmit.button.button-block.button-calm{
+    
+    width: 150px;
+    margin-left: 90px;
+}
+.loginBackground{
+    background-image: url('images/login-bg.png');
+}
+
+.checkBoxCustome{
+    margin: 4% 0% 0% 16% !important;
+    height: 20px;
+    padding: 10px;
+    border-radius: 0px;
+}
+.logo{
+    content:url('images/ge_icon.png');
+    width: 90px;
+    height: 90px;
+    margin: 10% 35% -30% 37%;
+}
+.signin-text{
+    margin: 30% 20% -50% 34% !important;
+    color: white;
+}
+.signin-text1{
+   
+    margin: 47% 20% -50% 34% !important;
+    color: white;
+    
+}
+.signin-text2{
+     font-size:8px;
+    margin: 49% 20% -50% 35% !important;
+    color: white;
+}
+.signInImg{
+    content: url('images/Sign-icon.png');
+    float: left;
+    width: 25px;
+    padding-top: 7px !important;
+}
+
+
+button.loginSubmit.button.button-block.button-calm{
+/*    background-color: #005eb8;;*/
+    border: none;
+    text-align: center;
+    width: 120px;
+    margin-left: 120px;
+}
+/*Login on textField*/
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+.login {
+    
+    margin: 55%;
+    margin-right: 1%;
+    margin-left: 1%;
+/*    width: 300px;*/
+}
+.login-screen {
+    background-color: #666;
+    padding: 20px;
+    border-radius: 5px
+}
+
+.app-title {
+    text-align: center;
+    color: #FFF;
+}
+
+.login-form {
+    text-align: center;
+}
+.control-group {
+    margin-bottom: 10px;
+}
+
+#login-name {
+    
+    background-color: #ECF0F1;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px 0;
+    width: 250px;
+    transition: border .5s;
+    color:#000;
+}
+
+input:focus {
+    border: 2px solid #3498DB;
+    box-shadow: none;
+}
+
+
+
+.login-link {
+    font-size: 12px;
+    color: #444;
+    display: block;
+    margin-top: 12px;
+}
+.alCheckbox{
+    background-color: transparent;
+    border-color: transparent;
+    margin-top:-19px;
+ 
+}
+#login-button7{
+    margin-top:-10px;
+}
+
+/*Sarvesh Changes*/
+.ge-header-icon{
+    content: url('images/ge_icon.png');
+    float: left;
+    margin-top: 5px !important;
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+ion-content{
+/*    margin-top: 20px !important;*/
+    background-color: lightgray;
+}
+div.dPODHeader.bar.bar-header{
+    background-color: black;
+    margin-top: 20px !important;
+}
+h1.title.dPODheader{
+    color: white;
+    margin-top: 10px !important;
+    font-size: 25px;
+}
+label.item.item-input.searchTasks{
+    border-radius: 20px;
+    height: 35px;
+    margin-bottom: 5px;
+}
+svg.nvd3-svg{
+    height: 150px !important;
+}
+ion-item.item.TaskMenu{
+    padding: 0px !important;
+    border-radius: 5px;
+    height: 70px;
+    margin-bottom:5px;
+}
+div.infoContent{
+    width: 90%;
+    position: relative;
+    left: 65px;
+    top: -75px;
+}
+/*img.turbineStatus{*/
+/*    position: relative;*/
+/*    top: -25px;*/
+/*    height: 35px;*/
+/*}*/
+label.item.item-input.searchTasks{
+    border-radius: 25px;
+    padding: 0 0 0 5px !important;
+}
+label input.searchbar{
+    border: 0px !important;
+}
+div.item-content.disable-pointer-events{
+    margin-left: -15px;
+    font-size: 15px
+}
+/*Sarvesh Changes*/
+/*Info*/
+.InfoPageColor{
+    background-color: #FFFFFF;
+}
+.TurbinID{
+    /*    margin: 30% 20% -50% 34% !important;*/
+    color: #3B99FF;
+}
+.col.col-50{
+    /*    border: 2px solid #4CAF50;*/
+    height: 80px;
+    text-align: center;
+}
+.col.col-50.forText1{
+    color:#0EB1E3;
+    border-right: 2px solid #0EB1E3;
+    margin-top: -20px;
+
+
+
+}
+.startOfTheDay-button10{
+   border-radius: 15px !important;
+    
+}
+.col.col-50.forText2{
+    
+
+
+   color: #0EB1E3;
+    
+}
+.row{
+  background-color:#2473FF:
+}
+.item.item-body{
+     background-color:#2473FF:
+}
+#MarkButton{
+    
+    
+/*    border-radius: 15px !important;*/
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+    
+}
+.item-content.adjustOnMenuList{
+    background-color: #666666;
+    color:#FFFFFF;
+}
+.has-header{
+    background-color: lightgray;
+}
+.scroll-content.ionic-scroll.has-header{
+    background.color:lightgray;
+}
+.nv-legendWrap.nvd3-svg{
+    pointer-events: none;
+/*    display: none;*/
+/*    background-image: url('img/taskInProgress.png');*/
+
+}
+/*TaskInfo NEW*/
+.addColorandIcon{
+    background-color:#2CB1E3;
+}
+/*image on header*/
+
+img.foo {
+    z-index: -1;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    border-radius: 50px;
+    border: 5px solid #FFFFFF;
+    position: absolute;
+}
+.my-back-button{
+/*     background-image: url('img/TaskInfo/back_3x.png');*/
+/*content:url('img/backarrow.png');*/
+content: url('img/ge_icon.png');
+width: 35px;
+}
+.container{
+    width: 100%;
+    border: 1px solid red;
+    overflow: hidden;
+    padding: 1px ;
+}
+.column1{
+    width: 33.33%;
+    float: left;
+    height: 100px;
+    background: #ccc;
+    text-align: center;
+    margin-left: 0px;
+}
+.column2{
+    width: 33.33%;
+    float: left;
+    height: 100px;
+    background: #ccc;
+    text-align: center;
+    margin-left: 0px;
+}
+.column3{
+    width: 33.33%;
+    float: left;
+    height: 100px;
+    background: #ccc;
+    text-align: center;
+    margin-left: 0px;
+}
+ion-content#taskDetails div.scroll.padding{
+    padding:0px !important;
+}
+/*Image open*/
+
+/* Empty. Add your own CSS if you like */
+.image-modal {
+    width: 100% !important;
+    height: 100%;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+.transparent {
+    background: transparent !important;
+}
+
+.fullscreen-image {
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+}
+
+.image-list-thumb {
+    padding: 2px 2px 2px 2px;
+/*    height: 100px;*/
+}
+
+img.turbineStatus{
+        z-index:-1;
+    position:relative;
+    top:-10px;
+    height:45px;
+}
+.wide-as-needed {
+    overflow: scroll;
+    white-space: nowrap;
+    width: 100%;
+  
+}
+.scroll {
+    min-width: 100%;
+}
+
+
+.centerme {
+    margin: 0 auto;
+    width: 100%;
+    height:100%;
+}
+
+.fullscreen-player {
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+}

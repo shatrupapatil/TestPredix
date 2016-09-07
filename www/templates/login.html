@@ -1,0 +1,50 @@
+    <ion-view  ng-app="app.controllers" ng-controller="loginCtrl" overflow-scroll="true">
+        <ion-content has-bouncing="false" class="padding loginBackground" >
+            
+            <img class="logo" alt="GE"></img>
+
+            <h5 class="signin-text"> Welcome to GE</h5>
+            <h1 class="signin-text1"> dPOD</h1>
+            <h6 class="signin-text2"> Powered by GE Power</h6>
+            
+            <div class="login">
+                <div class="login-screen">
+                    <div class="app-title">
+<!--                        <a class="button button-icon icon ion-key"></a>-->
+                         <img src="img/icon_key_3X.png" style="height: 20px; width: 20px;margin-left: -14px;margin-top: -7px;">
+                    </div>
+                    
+                    <div class="login-form">
+                        <div class="control-group">
+                            <input type="text" class="login-field" value="" placeholder="User Name" id="login-name" ng-model="SSOId">
+                                <label class="login-field-icon fui-user" for="login-name"></label>
+                                </div>
+                        
+                        <div class="control-group">
+                            <input type="password" class="login-field" value="" placeholder="Password" id="login-name" ng-model="SSOPsw">
+                                <label class="login-field-icon fui-lock" for="login-pass"></label>
+                                
+                         </div>
+                    <div style="float: left;margin-left: -15px;">
+                        <label class="checkbox checkbox-square">
+                            
+                            <ion-checkbox ng-model="checkStatus" ng-click="checkboxstatus()" class="alCheckbox" id="chk">Remember My SSO</ion-checkbox>
+                            
+                        </label>
+                     </div>
+                        
+                        
+<!--                        <button id="login-button7" class=" button button-positive  button-block " ng-click="LoginCheck(SSOId,SSOPsw);">Log in</button>-->
+                        <button id="login-button7" class=" button button-positive  button-block " ng-click="LoginCheck(SSOId,SSOPsw);">Log in</button>
+
+                        
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+        </ion-content>
+    </ion-view>
